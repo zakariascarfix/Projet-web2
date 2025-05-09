@@ -1,0 +1,165 @@
+
+.imagetop {
+    position: relative;
+    overflow: hidden;
+    margin-top: 72px;
+}
+
+.imagetop img {
+    width: 100%;
+    height: 50vh;
+    ;
+}
+
+.Textimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Textimage p {
+    width: 60%;
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: rgba(230, 230, 230,0.7); /* légèrement transparent */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+
+.Back{
+    position: relative;
+    z-index:0;
+    padding-top: 30px;
+    /* background: linear-gradient(135deg, #dbe4f0, #f6f6f6, #f3ac6b); */
+    /* background: linear-gradient(to bottom, #f5f2eb, #e0dcdc, #c3cbdc); */
+    background: linear-gradient(to bottom, #f5f2eb, #e0dcdc, #c3cbdc);
+    /* background: linear-gradient(to bottom, #2c3e50, #bdc3c7); */
+}
+
+#titre1{
+    text-align: center;
+}
+
+.section-titre{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px 0;
+
+}
+.section-titre h2{
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 10px;
+}
+      
+.section-titre::before,
+.section-titre::after {
+content: "";
+width: 200px; /* Réduit la longueur de la ligne */
+border-bottom: 3px solid #ff7105;
+margin: 0 10px;
+}
+      
+
+.AppartementsAcheter{
+    justify-content: center;
+    padding: 20px 100px ;
+    
+}
+
+.AppartementsAcheter-cards {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #909090;
+    background-color: #f7f6f6;
+}
+
+
+
+.AppartementsAcheter-cards img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.ApparName{
+    background-color: #ccc;
+}
+
+.ApparName p{
+    color: rgb(52, 52, 52);
+   font-size: 22px;
+   padding:10px 0px 10px 20px;
+   font-weight: bold;
+}
+
+.image_prix_texte{
+    display: flex;
+    gap: 20px;
+}
+
+.prix_texte{
+    display: block;
+}
+
+.prix_texte .texte{
+    color: black;
+}
+
+.prix{
+    background-color: #9f9f9f;
+    border-radius: 2px;
+    text-shadow: #c0c0c0;
+}
+
+.prix p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.texte p{
+    font-size: 18px;
+}
+
+.contact-card{
+    
+    padding-top: 8%;
+    padding-left: 75%;
+}
+.contact-card a{
+    text-decoration: none;
+    color: #000000;
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-card a:hover{
+    background-color: #bababa;
+}
+.contact-card p:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+}
+
+.infos{
+    margin-top: 30px;
+    display: flex;
+    gap: 40px;
+    background-color: #e5e5e5;
+    padding-left: 20px;
+}

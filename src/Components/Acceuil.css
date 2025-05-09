@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 8vh; /*pour la taille*/
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+.Titre {
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+#L1,#L2{
+    color: #ff7701;
+}
+
+.barre-taches {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    gap: 50px;
+    margin-right: 170px;
+    padding: 0;
+    
+}
+
+.barre-taches li {
+    position: relative;
+}
+
+.barre-taches a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul a {
+    color: white; 
+    text-decoration: none; 
+    padding: 10px 15px; 
+    font-weight: bold;
+    font-family: serif;
+    transition: background-color 0.3s;
+    text-transform: uppercase; 
+    border-radius: 5px; 
+    
+}
+
+nav ul a:hover{
+    background-color: #F0C75E ; 
+    color: #fff;
+
+}
+
+.sous-listes {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #D5C4A1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    min-width: 150px;
+    font-size: 16px;
+}
+
+/*Pour Sous-ligne*/
+.barre-taches li:hover .sous-listes {
+    display: block;
+}
+
+.barre-taches a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajuste la hauteur de la ligne */
+    width: 0%;
+    height: 2px;
+    background-color: #35a635; /* couleur de la ligne */
+    transition: width 0.4s ease-in-out;
+}
+
+.barre-taches a:hover::after {
+    width: 100%;
+}
+
+
+
+.sous-liste {
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.sous-liste:hover {
+    background-color: 	#A3B18A ;
+}
+
+
+
+
+
+/* La vidéo remplit toute la navbar */
+
+.video-header {
+    position: relative;/*relative*/
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.TextVideo {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    top: 23vh;
+}
+
+.TextVideo h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.TextVideo p {
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(211, 120, 51, 0.7);
+}
+
+
+
+
+/*Appartement cards*/
+.cards{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1cdc182;
+}
+
+.Appartement1 img{
+    margin-top: 0;
+} 
+
+.cards img{
+    width: 400px;
+    height: 450px;
+}
+
+
+
+
+/*Le contenu*/
+/* #titre-annonce{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #35a635;
+} */
+
+/* .Text{
+    
+}
+
+
+#Titre{
+    text-align: center;
+    padding: 20px;
+    background-color: #a17a0f;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Text p:nth-of-type(1){
+    font-family: sans-serif;
+    padding: 30px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: justify;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+
+.Text p:nth-of-type(2),
+.Text p:nth-of-type(3) {
+  color: red;
+  font-size: 20px;
+  padding-left: 40px;
+} */
+
+
+
+
+.Text {
+    margin: 50px 25px;
+    padding: 30px;
+    background-color: #fefefe;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.9;
+    color: #333;
+  }
+  
+  #Titre {
+    font-size: 2.4rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .Text p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .Text p:nth-of-type(2),
+  .Text p:nth-of-type(3) {
+    background-color: #e8f0fe;
+    border-left: 4px solid #1a73e8;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  
+
+  
+  
+
+
+
+
+
+.Mes-Appartemens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    
+}
+
+.Appartement-cards {
+    width: 30%; /* Pour 2 cartes par ligne avec un petit espace entre */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.Appartement-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    
+}
+
+.Appartement-cards img:hover{
+    transform: scale(1.02); 
+    
+}
+
+.Appartement-infos{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    gap: 15px;
+    background-color: #a91d1d;
+}
+
+.footer-container h2{
+    text-align: center;
+}
+
+.footer-container h2,
+.footer-container p{
+    color: cornsilk;
+}
+
+
+
+.f-contact img{
+    width: 10px;
+}
+
+.social-media a img{
+    width: 20px;
+    height: auto;
+} */
+
+
+
+.my-footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 50px 20px 30px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-container > div {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+  
+  .footer-container h2 {
+    font-size: 1.3rem;
+    color: #e0c36e; /* doré : symbole de valeur, immobilier */
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-container h2::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: #e0c36e;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  .footer-container p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .f-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .f-contact li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .f-contact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Réseaux sociaux */
+  .social-media {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); /* pour rendre les logos blancs sur fond sombre */
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
