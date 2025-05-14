@@ -294,9 +294,7 @@
     }
 
     #my-button {
-        width: 100%;
-        position: relative;
-        margin-top: 10px;
+        display: none;
     }
 }
 
