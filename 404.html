@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Rediriger vers la page d'accueil tout en gardant l'URL
+      var path = location.pathname;
+      var search = location.search;
+      var hash = location.hash;
+      location.replace("/Projet-web2" + "/index.html?redirect=" + encodeURIComponent(path + search + hash));
+    </script>
+  </head>
+  <body></body>
+</html>
