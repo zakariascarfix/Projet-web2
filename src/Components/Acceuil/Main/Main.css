@@ -294,11 +294,9 @@
     }
 
     #my-button {
-        display: none ;
-    }
-    #my-button :hover{
-        display: none ;
-    }
+        display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
     
 }
 
