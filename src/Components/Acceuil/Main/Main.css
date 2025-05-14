@@ -294,8 +294,12 @@
     }
 
     #my-button {
-        display: none !important;
+        display: none ;
     }
+    #my-button :hover{
+        display: none ;
+    }
+    
 }
 
 
