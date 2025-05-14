@@ -1,5 +1,79 @@
+.Text-container {
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin: 50px 20px 50px 20px;
+}
+
+.imagefamilly img {
+    border-radius: 20px;
+    width: 400px; /* Taille fixe de l'image sur les grands écrans */
+    height: auto;
+    box-shadow: 8px 20px 20px #878787;
+    object-fit: cover;
+}
+
+/* Conteneur du texte et de l'image */
+#Text_image {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+    padding: 30px;
+    background-color: #fefefe;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.9;
+    color: #333;
+}
+
+/* Texte */
+#Titre {
+    font-size: 2.3rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#Text_image p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    animation: fadeInUp 1s ease-out;
+}
+
+#Text_image p:nth-of-type(2),
+#Text_image p:nth-of-type(3) {
+    background-color: #e8f0fe;
+    border-left: 4px solid #1a73e8;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+/* Media Queries pour écran plus petit */
+@media (max-width: 768px) {
+    #Text_image {
+        flex-direction: column; /* L'image va se placer au-dessus du texte */
+        align-items: center;
+    }
+
+    .imagefamilly img {
+        width: 80%; /* L'image prendra 80% de la largeur du conteneur */
+        margin-bottom: 20px; /* Ajout d'un espace entre l'image et le texte */
+    }
+
+    #Titre {
+        font-size: 1.8rem; /* Ajuste la taille du titre pour les petits écrans */
+    }
+
+    #Text_image p {
+        font-size: 1.1rem; /* Ajuste la taille du texte */
+    }
+}
+
+
+
 /*Text*/
-.Text-container{
+/* .Text-container{
     justify-content: space-between;
     background-color: #ffffff;
     margin: 50px 20px 50px 20px;
@@ -18,7 +92,7 @@
 }
 
 
-.Text_image {
+#Text_image {
     display: flex;
     margin: 50px 20px;
     padding: 30px;
@@ -38,20 +112,22 @@
     margin-bottom: 25px;
   }
   
-  .Text_image p {
+  #Text_image p {
     font-size: 1.3rem;
     margin-bottom: 15px;
     animation: fadeInUp 1s ease-out;
   }
   
-  .Text_image p:nth-of-type(2),
-  .Text_image p:nth-of-type(3) {
+  #Text_image p:nth-of-type(2),
+  #Text_image p:nth-of-type(3) {
     background-color: #e8f0fe;
     border-left: 4px solid #1a73e8;
     padding: 10px 15px;
     font-weight: 500;
     border-radius: 8px;
-  }
+  } */
+
+
 
 
 #titre1{
@@ -91,29 +167,6 @@
 }
 
 
-
-.cards{
-    display: flex;
-    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: #c1cdc182;
-}
-
-.Appartement1 img{
-    margin-top: 0;
-    
-} 
-
-.cards img{
-    width: 400px;
-    height: 450px;
-}
-
-
-
 .Mes-Appartemens {
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +181,8 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
 }
 
 .Appartement-cards img {
@@ -135,101 +190,117 @@
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
-    
 }
 
-
-
-/* Conteneur image + bouton */
-.image_and_button {
-  position: relative;
+.Appartement-infos {
+    text-align: left;
+    padding: 20px 5px 40px 15px;
+    background-color: #f8f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-/* Bouton caché par défaut */
-#my-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Affichage au survol de l'image */
-.image_and_button:hover #my-button {
-  opacity: 1;
-  color: #000000;
-}
-
-#my-button:hover{
-  background-color:  rgb(255, 106, 0);
-}
-
-
-
-
-.Appartement-infos{
-  text-align: left;
-  padding: 20px 5px 40px 15px;
-  background-color: #f8f7f7;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
-
-.Appartement-infos .p1{
-color: #646464;
-font-family: "Work Sans", sans-serif;
-font-size: 15px;
-line-height: 1.8;
-
-
-}
-
-.Appartement-infos .p1:hover{
-color: rgb(255, 106, 0);
+.Appartement-infos .p1 {
+    color: #646464;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
 }
 
 .Appartement-infos .p2,
 .Appartement-infos .p3,
-.Appartement-infos .p4{
-font-family: sans-serif;
-color: #000000;
+.Appartement-infos .p4 {
+    font-family: sans-serif;
+    color: #000000;
 }
 
-
-.Appartement-infos span{
-color: rgb(246, 150, 99);
+.Appartement-infos span {
+    color: rgb(246, 150, 99);
 }
 
-.Appartement-infos a{
-  text-decoration: none;
+.Appartement-infos a {
+    text-decoration: none;
 }
 
-.Appartement-infos .p5{
-  font-family: sans-serif;
-  color: #000000;
-  padding-top: 20px;
-  padding-left: 60%;
-  }
+.Appartement-infos .p5 {
+    font-family: sans-serif;
+    color: #000000;
+    padding-top: 20px;
+    padding-left: 50%;
+}
 
-
-  
-
-
-
-  .Appartement-infos .p5:hover{
-    
+.Appartement-infos .p5:hover {
     color: #ff5202;
-    
-    
 }
+
+.image_and_button {
+    position: relative;
+}
+
+#my-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image_and_button:hover #my-button {
+    opacity: 1;
+    color: #000000;
+}
+
+#my-button:hover {
+    background-color: rgb(255, 106, 0);
+}
+
+@media (max-width: 768px) {
+    .Appartement-cards {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Appartement-cards img {
+        order: 2;
+    }
+
+    .Appartement-infos .p1 {
+        order: 1;
+    }
+
+    .Appartement-infos .p2,
+    .Appartement-infos .p3,
+    .Appartement-infos .p4 {
+        order: 3;
+    }
+
+    .Appartement-infos .p5 {
+        order: 4;
+        padding-left: 40%;
+    }
+
+    .Appartement-cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    #my-button {
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+}
+
+
 
 .button-offres{
   margin-top: 50px;
@@ -255,9 +326,8 @@ color: rgb(246, 150, 99);
 
 
 
-
-.image_cover-texte{
-  position: relative;/*relative*/
+.image_cover-texte {
+  position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -268,12 +338,11 @@ color: rgb(246, 150, 99);
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  width: 100%;
   height: 60%;
   object-fit: cover;
   z-index: -1;
   opacity: 0.3;
-  
 }
 
 .Textimagecard {
@@ -282,13 +351,11 @@ color: rgb(246, 150, 99);
   color: white;
   text-align: center;
   padding-top: 120px;
-  top: 1;
 }
 
 .Textimagecard h1 {
   font-size: 40px;
   margin-bottom: 10px;
- 
   color: #ff7105;
 }
 
@@ -302,7 +369,7 @@ color: rgb(246, 150, 99);
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 100px; /* pour faire “remonter” les cartes sur l’image */
+  margin-top: 100px;
 }
 
 .card {
@@ -314,26 +381,56 @@ color: rgb(246, 150, 99);
   height: 150px;
   flex: 1;
   text-align: center;
-  
 }
 
-.card p:nth-of-type(1){
+.card p:nth-of-type(1) {
   font-weight: bold;
   font-size: 30px;
-  font-family:  sans-serif;
+  font-family: sans-serif;
   color: #000000;
 }
 
-.card p:nth-of-type(2){
+.card p:nth-of-type(2) {
   font-weight: bold;
   font-size: 30px;
   font-family: "Cormorant Garamond", serif;
   color: #5285c7;
 }
-.card hr{
+
+.card hr {
   text-align: center;
   width: 200px;
   color: #000000;
-  
 }
+
+@media (max-width: 768px) {
+  .image_cover-texte {
+    height: auto;
+  }
+
+  .image_cover {
+    height: 50%;
+    object-position: center top;
+  }
+
+  .Textimagecard h1 {
+    font-size: 30px;
+  }
+
+  .Textimagecard p {
+    font-size: 18px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
 

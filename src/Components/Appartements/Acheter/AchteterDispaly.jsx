@@ -19,7 +19,7 @@ function AcheterDislpay({imageUrl,price,ApparName,ville,Texte,surface,chambre,sa
                         <p>{Texte}</p>
                     </div>
                     <div className="contact-card">
-                    <p><Link to="/">📞Contactez-Nous</Link></p>
+                    <p><Link to="/Contact">📞Contactez-Nous</Link></p>
                     </div>
                 </div>
         </div>
@@ -31,15 +31,7 @@ function AcheterDislpay({imageUrl,price,ApparName,ville,Texte,surface,chambre,sa
                 <p className="p4">📍 Adresse: <span>{ville}</span> </p>
             </div>
             
-            {/* <div className="Appartement-infos">
-            <p className="p1">CASA BOURGOGNE VEND CONFORTABLE APPART 100 m² 2 CHAMBRES PAS CHER</p>
             
-            <p className="p2">💰 Prix: <span>{price}</span> </p>
-            <p className="p3">🏡 Surface: <span>{surface}</span> </p>
-            <p className="p4">📍 Posistion: <span>{ville}</span> </p>
-            <a href="#"><p className="p5">Contactez-Nous...➤</p></a>
-        </div> */}
-        
     
         </div>
         

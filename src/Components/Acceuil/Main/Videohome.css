@@ -1,7 +1,5 @@
-/* La vidéo remplit toute la navbar */
-
 .video-header {
-    position: relative;/*relative*/
+    position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -16,7 +14,6 @@
     min-height: 100%;
     object-fit: cover;
     z-index: -1;
-    
 }
 
 .TextVideo {
@@ -37,4 +34,37 @@
 .TextVideo p {
     font-size: 24px;
     text-shadow: 1px 1px 3px rgba(211, 120, 51, 0.7);
+}
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: rgb(255, 128, 0);
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: auto; 
+        height: auto; 
+        object-fit: contain; 
+    }
+
+    .TextVideo h1 {
+        font-size: 26px;
+    }
+
+    .TextVideo p {
+        font-size: 15px;
+    }
 }

@@ -1,38 +1,58 @@
-
 .imagetop {
     position: relative;
     overflow: hidden;
-    margin-top: 72px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 .imagetop img {
     width: 100%;
     height: 50vh;
-    ;
+    object-fit: cover;
 }
 
 .Textimage {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;     
-    justify-content: center; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Réduire la largeur à 80% sur grand écran */
+    text-align: center;
     z-index: 1;
     color: rgb(0, 0, 0);
-    text-align: center;
 }
 
 .Textimage p {
-    width: 60%;
     font-size: 30px;
     padding: 10px 20px;
-    background-color: rgba(230, 230, 230,0.7); /* légèrement transparent */
+    background-color: rgba(230, 230, 230, 0.7);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     border-radius: 8px;
+    word-wrap: break-word; 
+    white-space: normal;
+    max-width: 100%;
 }
+
+@media (max-width: 768px) {
+    .imagetop img {
+        width: 100%;  /* L'image prend toute la largeur sur mobile */
+        height: auto;
+    }
+
+    .Textimage {
+        top: 40%;  /* Placer le texte un peu plus bas sur mobile */
+        width: 90%;
+        text-align: center;
+    }
+
+    .Textimage p {
+        font-size: 18px;  
+        padding: 10px 15px;  
+    }
+}
+
+
 
 
 .Back{
@@ -70,6 +90,23 @@ border-bottom: 3px solid #ff7105;
 margin: 0 10px;
 }
       
+@media (max-width: 768px) {
+    .section-titre {
+        
+        justify-content: center;
+    }
+
+    .section-titre h2 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section-titre::before,
+    .section-titre::after {
+        width: 30px;
+    }
+}
 
 .AppartementsAcheter{
     justify-content: center;
@@ -163,3 +200,45 @@ margin: 0 10px;
     background-color: #e5e5e5;
     padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+    .AppartementsAcheter{
+
+        margin-left: -15%;
+        margin-right: 20px;
+    }
+    .AppartementsAcheter-cards {
+        width: 140%; 
+        margin: 10px 0; 
+        flex-grow: 0; 
+        
+    }
+
+    .AppartementsAcheter {
+        justify-content: center;
+    }
+
+    .image_prix_texte {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .AppartementsAcheter-cards img {
+        width: 100%; 
+        margin-bottom: 15px;
+    }
+
+    .contact-card {
+        padding-left: 0;
+        padding-top: 10px;
+        
+    }
+
+    .infos {
+        display: block;
+        padding-left: 0;
+    }
+}
+
+

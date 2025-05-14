@@ -1,0 +1,36 @@
+.Error-contener {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+}
+
+.Error-contener h1 {
+  font-size: 4rem;
+  color: #dc3545;
+  margin-bottom: 30px;
+}
+
+.retour button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.retour button:hover {
+  background-color: #0056b3;
+}
+
+.Accueil {
+  text-decoration: none;
+}

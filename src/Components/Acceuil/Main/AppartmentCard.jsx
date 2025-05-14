@@ -3,7 +3,7 @@ import './Main.css'
 import { Link } from "react-router-dom";
 import AppartementDislpay from "./AppartementDispaly";
 
-import casablanca from '../../../Images/img2.jpg'
+import casablanca from '../../../Images/img29.jpg'
 import Rabat from '../../../Images/img13.jpg'
 import Tanger from '../../../Images/img21.jpg'
 import Agadir from '../../../Images/14.jpg'
@@ -13,9 +13,9 @@ import imagecover from '../../../Images/imgfooter3.webp'
 
 function CardsAppartement(){
     const Appartements=[
-        {id:1,imageUrl:casablanca,name: 'image1',ville:'Casablanca|Bourgone',surface:'10000 m2',price:'1.000.000',isOnSale:true},
-        {id:2,imageUrl:Rabat,name: 'image1',ville:'Tanger',surface:'10000 m2',price:'1.000.000',isOnSale:true},
-        {id:3,imageUrl:Marakech,name: 'image1',ville:'Casablanca|Ain Diab',surface:'10000 m2',price:'1.000.000',isOnSale:true},
+        {id:1,imageUrl:casablanca,titre:'Appartement Moderne à Anfa',name: 'image1',ville:'Casablanca | Anfa',surface:'120 m2',price:'1.000.000',isOnSale:true},
+        {id:2,imageUrl:Rabat,titre:'Vue Mer à Ain Diab',name: 'image1',ville:'Casablanca | Ain Diab',surface:'140 m2',price:'1.200.000',isOnSale:true},
+        {id:3,imageUrl:Marakech,titre:'Coup de cœur à Gauthier',name: 'image1',ville:'Casablanca | Gauthier',surface:'90 m2',price:'860.000',isOnSale:true},
         // {id:4,imageUrl:Agadir,name: 'image1',ville:'Marrakech',surface:'10000 m2',price:'1.000.000',isOnSale:true},
         // {id:5,imageUrl:Safi,name: 'image1',ville:'Safi',surface:'10000 m2',price:'1.000.000',isOnSale:true},
         // {id:6,imageUrl:Tanger,name: 'image1',ville:'Casablanca|Ain Chok',surface:'10000 m2',price:'1.000.000',isOnSale:true},
@@ -35,7 +35,7 @@ function CardsAppartement(){
         {Appartements.map((element)=>
             <AppartementDislpay key={element.id} imageUrl={element.imageUrl}
                 productName={element.name} ville={element.ville} surface={element.surface}
-                price={element.price}  isOnSale={element.isOnSale}/>
+                price={element.price}  titre={element.titre}/>
             )}
 
         </div>

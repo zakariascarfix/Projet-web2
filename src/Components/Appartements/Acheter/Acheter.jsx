@@ -37,12 +37,12 @@ function Acheter(){
         <div className="Textimage">
             <p>Superbe Appartement Moderne avec Finitions Haut de Gamme</p>
         </div>
-        </div>
+      </div>
 
         <div className='Back'>
-        <div className='section-titre'>
-        <h2 >Liste des Biens Immobiliers à Vendre</h2> 
-        </div>   
+          <div className='section-titre'>
+          <h2 >Liste des Biens Immobiliers à Vendre</h2> 
+          </div>   
         
 
 

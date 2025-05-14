@@ -4,7 +4,7 @@ function TextePersuasion(){
     return(
         <div className="Text-container">
             
-            <div className="Text_image">
+            <div id="Text_image">
                 <div>
                     <h1 id="Titre">Trouvez l'appartement de vos rêves dès aujourd'hui !</h1>
                     <p>

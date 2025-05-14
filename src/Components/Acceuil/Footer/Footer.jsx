@@ -4,7 +4,7 @@ import logoTelephone from '../../../Images/logos/telephone.jpg'
 import logoEmail from '../../../Images/logos/gmail.png'
 import logoInstagram from '../../../Images/logos/instagram (1).png'
 import logoFacebook from '../../../Images/logos/facebook (1).png'
-import logoLinkedin from '../../../Images/logos/logolinkdin4.png'
+import logoLinkedin from '../../../Images/logos/linkedin.png'
 import imagecover from '../../../Images/imgfooter3.webp'
 
 function Footer(){
@@ -40,19 +40,19 @@ function Footer(){
                 </div> 
             </div>
             <div className="social-media">
-                    <a href="#" target="_blank">
-                    <img src={logoEmail} alt="E-mail"/>
+                    <a href="mailto:zakariaguarnaoui@gmail.com">
+                    <img src={logoEmail} alt="E-mail" />
                     </a>
-                            
-                    <a href="#" target="_blank">
+                                                
+                    <a href="https://www.instagram.com/" target="_blank">
                     <img src={logoInstagram} alt="Instagram"/>
                     </a>
                             
-                    <a href="#" target="_blank">
+                    <a href="https://www.facebook.com/" target="_blank">
                     <img src={logoFacebook} alt="Facebook" />
                     </a>
 
-                    <a href="#" target="_blank">
+                    <a href="https://www.Linkedin.com/" target="_blank">
                     <img src={logoLinkedin} alt="Linkedin" />
                     </a>
             </div>

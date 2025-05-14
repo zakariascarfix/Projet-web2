@@ -1,0 +1,130 @@
+.About-us{
+    margin-top: 30px;
+}
+.About-us, .Vision, .caracteristiques, .Avis-clients {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Titres centrés */
+.Titres_intro, .Titres_vision, .Titres_caract, .Avis-clients > div:first-child {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Titres_intro h1, .Titres_vision h1, .Titres_caract h1, .Avis-clients h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #5f5f5f;
+}
+
+.Titres_intro p, .Titres_vision p, .Titres_caract p, .Avis-clients p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Introduction section: image à gauche, texte à droite */
+.intorduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image_intro img {
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.Texte_intro {
+  max-width: 600px;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Vision & Caractéristiques : image et texte alignés verticalement */
+.contenu_vision,.contenu_caract {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.image_vision img,.image_caract img {
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.Texte_vision,.Texte_caract {
+  max-width: 600px;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.Texte_caract p::before {
+  content: "\2713\0020";
+  color: green;
+}
+
+/* Avis Clients */
+.Avis-clients{
+    background-color: #ff6f00b8;
+    margin-bottom: 30px;
+}
+
+.Avis-clients-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+ 
+}
+
+.Avis_texte h1,.Avis_texte p{
+    color: white;
+}
+.Avis-clients-card {
+  background-color: white;
+  padding: 20px;
+  max-width: 320px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Avis-clients-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.Avis-clients-card span {
+  display: block;
+  font-size: 18px;
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.Avis-clients-card h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  
+}
+
+.Avis-clients-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
